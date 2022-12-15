@@ -1,0 +1,84 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#0dc1d9
+}
+.contanier
+{
+    position: relative;
+    height: 90vh;
+}
+#dropDown
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    background-color: rgb(22, 29, 112);
+    color: white;
+    border-radius: 10px; 
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+}
+.icon
+{
+    position: absolute;
+    top:18px;
+    opacity: 0;
+}
+#main-text
+{
+    line-height: 40px;
+}
+#text
+{
+    margin-left: 20px;
+    display: inline-block;
+    width: 85%;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    display: block; 
+}
+#slider 
+{
+    width: 96%; 
+    height: 40px;   
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    opacity: 1;
+    z-index: -1;
+    display: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#dropDownIn
+{
+    z-index: -1;
+    position: absolute;
+    top:49px;
+    left: 0px;
+    opacity: 0.5;
+    display: none;
+    transition: 1s;
+    background-color: rgb(22, 29, 112);
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 40px;
+    padding:0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

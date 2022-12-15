@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDownMenu</title>
+    <link rel="stylesheet" href="CSS/DropDownMenu.css">
+</head>
+
+<body>
+    <div class="contanier">
+            <ul id="dropDown">
+                <li class="main-li">  
+
+                    <a href="#" onclick="OpenMenu()" id="main-text">
+                        <ion-icon name="logo-linkedin"  class="icon" id="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-instagram"  class="icon" id="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-facebook"  class="icon" id="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-youtube"  class="icon"id="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-twitter" class="icon" id="logo-twitter"></ion-icon>
+                        <span id="text">Favori uygulamanızı seçiniz</span>  
+                        <ion-icon name="caret-down-outline" id="upDown"></ion-icon>
+                    </a>
+                    <ul id="dropDownIn">
+                        <div id="slider"></div>  
+                        <li><a href="#" onclick="selectedOption(0)" onmouseover="slide(0)" onmouseout="slideOut()" class="text-In">LinkedIn</a></li>
+                        <li><a href="#" onclick="selectedOption(1)" onmouseover="slide(1)" onmouseout="slideOut()" class="text-In">Instagram</a></li>
+                        <li><a href="#" onclick="selectedOption(2)" onmouseover="slide(2)" onmouseout="slideOut()" class="text-In">Facebook</a></li>
+                        <li><a href="#" onclick="selectedOption(3)" onmouseover="slide(3)"onmouseout="slideOut()" class="text-In">Youtube</a></li>
+                        <li><a href="#" onclick="selectedOption(4)" onmouseover="slide(4)"onmouseout="slideOut()" class="text-In">Twitter</a></li>
+                    </ul>
+                </div>
+                </li>
+            </ul>
+    </div>
+    <script src="JavaScript/DropDownMenuJS.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
